@@ -1,5 +1,11 @@
 import avatar from "../assets/isaac_pic.jpeg";
-import { Avatar, NameTitle, ProfileSectionStyle } from "./ProfileSectionStyle";
+// import shareBtn from "../assets/share-06.svg";
+import {
+  Avatar,
+  NameTitle,
+  ProfileSectionStyle,
+  //   ShareButton,
+} from "./ProfileSectionStyle";
 const ProfileSection = () => {
   return (
     <ProfileSectionStyle>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Avatar = styled.div`
   #mainImg {
     /* Auto layout */
-    border: 2px solid red;
 
     display: flex;
     flex-direction: column;
@@ -27,8 +26,6 @@ export const Avatar = styled.div`
 `;
 
 export const NameTitle = styled.div`
-  border: 2px solid red;
-
   /* Text xl/Bold */
 
   font-style: normal;
@@ -47,7 +44,6 @@ export const NameTitle = styled.div`
 `;
 
 export const ProfileSectionStyle = styled.div`
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,4 +55,21 @@ export const ProfileSectionStyle = styled.div`
   height: 142px;
 
   /* Inside auto layout */
+`;
+
+export const ShareButton = styled.button`
+  border: 2px dotted lightgray;
+  background-color: transparent;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 20%;
+  /* left: 0; */
+  top: 3rem;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    right: 10%;
+  }
 `;

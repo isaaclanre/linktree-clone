@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const SocialSectionStyle = styled.div`
   /* Auto layout */
-  border: 2px solid red;
 
   display: flex;
   flex-direction: row;

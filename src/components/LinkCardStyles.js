@@ -30,3 +30,10 @@ export const LinkCardStyle = styled.p`
   order: 0;
   flex-grow: 1;
 `;
+
+export const HoverEffectStyle = styled.div`
+  p:hover {
+    background: #d0d5dd;
+    /* background: #eaecf0; */
+  }
+`;
