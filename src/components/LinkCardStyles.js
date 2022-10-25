@@ -4,15 +4,16 @@ export const LinkCardStyle = styled.p`
   box-sizing: border-box;
 
   /* Auto layout */
+  border: 8px solid red;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 24px 32px;
   gap: 8px;
 
-  width: 1152px;
+  width: 100%;
   height: 76px;
 
   /* Gray/200 */

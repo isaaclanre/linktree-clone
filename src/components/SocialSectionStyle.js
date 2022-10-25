@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SocialSectionStyle = styled.div`
   /* Auto layout */
+  border: 2px solid red;
 
   display: flex;
   flex-direction: row;
@@ -10,7 +11,7 @@ export const SocialSectionStyle = styled.div`
   padding: 24px 0px;
   gap: 24px;
 
-  width: 1152px;
+  width: 100%;
   height: 24px;
 
   /* Inside auto layout */
@@ -18,6 +19,9 @@ export const SocialSectionStyle = styled.div`
   flex: none;
   order: 0;
   flex-grow: 1;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 // export const SocialSectionWrapper = styled.div`

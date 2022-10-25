@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Avatar = styled.div`
   #mainImg {
     /* Auto layout */
+    border: 2px solid red;
 
     display: flex;
     flex-direction: column;
@@ -26,12 +27,10 @@ export const Avatar = styled.div`
 `;
 
 export const NameTitle = styled.div`
-  width: 1152px;
-  height: 30px;
+  border: 2px solid red;
 
   /* Text xl/Bold */
 
-  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -45,13 +44,10 @@ export const NameTitle = styled.div`
   color: #101828;
 
   /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
 `;
 
 export const ProfileSectionStyle = styled.div`
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,13 +55,8 @@ export const ProfileSectionStyle = styled.div`
   gap: 24px;
   isolation: isolate;
 
-  width: 1152px;
+  width: 100%;
   height: 142px;
 
   /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 `;
