@@ -26,7 +26,7 @@ export const FooterStyle = styled.div`
   order: 0;
   flex-grow: 0;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     display: none;
   }
 `;

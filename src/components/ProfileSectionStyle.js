@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Avatar = styled.div`
-  #mainImg {
+  #profile__img {
     /* Auto layout */
 
     display: flex;

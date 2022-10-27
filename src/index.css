@@ -16,29 +16,20 @@ code {
 
 a:link {
   text-decoration: none;
+  color: #101828;
 }
 
 a:visited {
   text-decoration: none;
+  color: #101828;
 }
 
 a:hover {
   text-decoration: none;
+  color: #101828;
 }
 
 a:active {
   text-decoration: none;
-}
-
-a:link {
-  color: #101828;
-}
-a:visited {
-  color: #101828;
-}
-a:hover {
-  color: #101828;
-}
-a:active {
   color: #101828;
 }

@@ -10,7 +10,7 @@ const ProfileSection = () => {
   return (
     <ProfileSectionStyle>
       <Avatar>
-        <img src={avatar} id="mainImg" alt="Logo" />
+        <img src={avatar} id="profile__img" alt="Logo" />
       </Avatar>
       <NameTitle>Isaac Olanrewaju</NameTitle>
     </ProfileSectionStyle>
