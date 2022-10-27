@@ -5,8 +5,8 @@ import { SocialSectionStyle } from "./SocialSectionStyle";
 const SocialSection = () => {
   return (
     <SocialSectionStyle>
-      <img src={slack} id="@isaacolanre" alt="slack" />
-      <img src={gitbub} id="github" alt="github" />
+      <img src={slack} id="@isaacolanre" alt="slack-logo" />
+      <img src={gitbub} id="github" alt="github-logo" />
     </SocialSectionStyle>
   );
 };

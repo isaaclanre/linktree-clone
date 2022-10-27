@@ -73,3 +73,7 @@ export const ShareButton = styled.button`
     right: 10%;
   }
 `;
+
+export const HiddenSlack = styled.p`
+  display: none;
+`;

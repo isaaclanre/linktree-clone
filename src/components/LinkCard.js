@@ -5,7 +5,7 @@ const LinkCard = () => {
     {
       name: "Twitter Link",
       link: "https://twitter.com/isaacolanre",
-      id: "twitter",
+      id: "twitter-link",
     },
     { name: "Zuri Team", link: "https://training.zuri.team/", id: "btn__zuri" },
     { name: "Zuri Books", link: "https://books.zuri.team", id: "books" },
@@ -35,7 +35,6 @@ const LinkCard = () => {
       ))}
     </HoverEffectStyle>
   );
-  //   <LinkCardStyle>Hello</LinkCardStyle>;
 };
 
 export default LinkCard;
