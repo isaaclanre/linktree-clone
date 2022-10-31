@@ -1,4 +1,6 @@
 import avatar from "../assets/isaac_pic.jpeg";
+import image from "../assets/Icon.svg";
+
 // import shareBtn from "../assets/share-06.svg";
 import {
   Avatar,
@@ -12,11 +14,12 @@ const ProfileSection = () => {
     <>
       <ProfileSectionStyle>
         <Avatar>
-          <img src={avatar} id="profile__img" alt="Logo" />
+          <img src={image} id="icon" alt="Icon" />
+          <img src={avatar} id="profile__img" alt="Profile" />
         </Avatar>
-        <NameTitle id="twitter">isaacolanre</NameTitle>
+        <NameTitle id="twitter">@isaacolanre</NameTitle>
       </ProfileSectionStyle>
-      <HiddenSlack id="slack">isaacolanre</HiddenSlack>
+      <HiddenSlack id="slack">@isaacolanre</HiddenSlack>
     </>
   );
 };

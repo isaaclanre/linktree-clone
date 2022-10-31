@@ -7,6 +7,8 @@ import shareIcon from "./assets/share-06.svg";
 import dotIcon from "./assets/dots-horizontal.svg";
 import { ShareButton } from "./components/ProfileSectionStyle";
 import { useEffect, useState } from "react";
+import ReactTooltip from "react-tooltip";
+
 function App() {
   const [isMobile, setIsMobile] = useState(true);
   const handleResize = () => {
@@ -25,14 +27,15 @@ function App() {
       <MainWrapper>
         <ShareButton>
           {isMobile ? (
-            <img src={shareIcon} alt="icon" />
+            <img src={shareIcon} data-tip="Share Link" alt="icon" />
           ) : (
-            <img src={dotIcon} alt="icon" />
+            <img src={dotIcon} data-tip="Share Link" alt="icon" />
           )}
         </ShareButton>
         <ProfileSection />
         <LinkCard />
         <SocialSection />
+        <ReactTooltip />
       </MainWrapper>
       <Footer />
     </>

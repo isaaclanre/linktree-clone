@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Avatar = styled.div`
+  position: relative;
+
   #profile__img {
     /* Auto layout */
 
@@ -13,7 +15,7 @@ export const Avatar = styled.div`
     width: 88px;
     height: 88px;
 
-    background: url(.jpg);
+    /* background: url(.jpg); */
     border-radius: 275px;
 
     /* Inside auto layout */
@@ -21,7 +23,41 @@ export const Avatar = styled.div`
     flex: none;
     order: 0;
     flex-grow: 0;
-    z-index: 0;
+    z-index: 3000;
+  }
+
+  #icon {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 32%;
+    top: 60%;
+
+    background: url(.jpg);
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* z-index: 2000; */
+  }
+
+  &:hover #icon {
+    visibility: visible;
+    z-index: 1000;
+  }
+
+  &:hover #profile__img {
+    opacity: 0.8;
+    background-color: rgba (0, 0, 0, 0.5);
   }
 `;
 

@@ -27,7 +27,10 @@ export const FooterStyle = styled.div`
   flex-grow: 0;
 
   @media only screen and (max-width: 640px) {
-    display: none;
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
 `;
 

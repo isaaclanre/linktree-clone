@@ -18,9 +18,6 @@ export const SocialSectionStyle = styled.div`
   flex: none;
   order: 0;
   flex-grow: 1;
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
 `;
 
 // export const SocialSectionWrapper = styled.div`
