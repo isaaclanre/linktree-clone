@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/linktree-clone/static/css/main.e2947a21.css",
-    "main.js": "/linktree-clone/static/js/main.be2e684e.js",
+    "main.js": "/linktree-clone/static/js/main.2ad0592d.js",
     "static/media/isaac_pic.jpeg": "/linktree-clone/static/media/isaac_pic.c8d53e8b035ed4d034ca.jpeg",
     "static/media/I4G.svg": "/linktree-clone/static/media/I4G.601ff0479d970c740e8b7d7ba7821548.svg",
     "static/media/zuri.svg": "/linktree-clone/static/media/zuri.0f8c3aa843c87d1f28aa0826858bd0ef.svg",
     "static/media/slack.svg": "/linktree-clone/static/media/slack.49b7dd729f7b39366b7e6995774780ae.svg",
     "static/media/github.svg": "/linktree-clone/static/media/github.05ffca422514a5bbf3ac752e4d893c57.svg",
+    "static/media/Icon.svg": "/linktree-clone/static/media/Icon.6317244a5381be929492c969c7c62821.svg",
     "static/media/dots-horizontal.svg": "/linktree-clone/static/media/dots-horizontal.2af13fa62624ad9f6952c87bb0fd1888.svg",
     "static/media/share-06.svg": "/linktree-clone/static/media/share-06.e5221371173459402efbfd2e8efe8e20.svg",
     "index.html": "/linktree-clone/index.html",
     "main.e2947a21.css.map": "/linktree-clone/static/css/main.e2947a21.css.map",
-    "main.be2e684e.js.map": "/linktree-clone/static/js/main.be2e684e.js.map"
+    "main.2ad0592d.js.map": "/linktree-clone/static/js/main.2ad0592d.js.map"
   },
   "entrypoints": [
     "static/css/main.e2947a21.css",
-    "static/js/main.be2e684e.js"
+    "static/js/main.2ad0592d.js"
   ]
 }
