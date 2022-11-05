@@ -1,6 +1,5 @@
 import { HoverEffectStyle, LinkCardStyle } from "./LinkCardStyles";
 import ReactTooltip from "react-tooltip";
-import { Link } from "react-router-dom";
 
 const LinkCard = () => {
   let links = [
