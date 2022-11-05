@@ -1,12 +1,12 @@
 import Footer from "./components/Footer";
 import Homepage from "./components/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import ContactUs from "./components/ContactUs";
 import Notfound from "./components/NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <>
         <Routes>
           <Route exact path="/" element={<Homepage />}></Route>
@@ -15,7 +15,7 @@ const App = () => {
         </Routes>
         <Footer />
       </>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
