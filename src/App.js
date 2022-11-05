@@ -9,7 +9,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/linktree-clone" element={<Homepage />}></Route>
+          <Route path="/" element={<Homepage />}></Route>
           <Route path="/contact" element={<ContactUs />}></Route>
         </Routes>
       </BrowserRouter>
