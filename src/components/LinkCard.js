@@ -1,5 +1,6 @@
 import { HoverEffectStyle, LinkCardStyle } from "./LinkCardStyles";
 import ReactTooltip from "react-tooltip";
+import { link } from "react-router-dom";
 
 const LinkCard = () => {
   let links = [
@@ -40,15 +41,20 @@ const LinkCard = () => {
       id: "book__design",
       data_tip: "This is one of the best books ever to teach design",
     },
+    {
+      name: "Contact Me",
+      link: "/contact",
+      id: "contact",
+      data_tip: "Please click here to drop",
+    },
   ];
   return (
     <HoverEffectStyle>
       {links.map((i) => (
         <a href={i.link}>
-          {" "}
           <LinkCardStyle data-tip={i.data_tip} id={i.id}>
             {i.name}
-          </LinkCardStyle>{" "}
+          </LinkCardStyle>
         </a>
       ))}
       <ReactTooltip />

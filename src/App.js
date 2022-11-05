@@ -1,45 +1,20 @@
-import { MainWrapper } from "./AppStyle";
 import Footer from "./components/Footer";
-import LinkCard from "./components/LinkCard";
-import ProfileSection from "./components/ProfileSection";
-import SocialSection from "./components/SocialSection";
-import shareIcon from "./assets/share-06.svg";
-import dotIcon from "./assets/dots-horizontal.svg";
-import { ShareButton } from "./components/ProfileSectionStyle";
-import { useEffect, useState } from "react";
-import ReactTooltip from "react-tooltip";
+import Homepage from "./components/HomePage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ContactUs from "./components/ContactUs";
 
-function App() {
-  const [isMobile, setIsMobile] = useState(true);
-  const handleResize = () => {
-    if (window.innerWidth > 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  });
+const App = () => {
   return (
-    <>
-      <MainWrapper>
-        <ShareButton>
-          {isMobile ? (
-            <img src={shareIcon} data-tip="Share Link" alt="icon" />
-          ) : (
-            <img src={dotIcon} data-tip="Share Link" alt="icon" />
-          )}
-        </ShareButton>
-        <ProfileSection />
-        <LinkCard />
-        <SocialSection />
-        <ReactTooltip />
-      </MainWrapper>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <>
+        <Routes>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/contact" element={<ContactUs />}></Route>
+        </Routes>
+        <Footer />
+      </>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
