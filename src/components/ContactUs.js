@@ -19,7 +19,6 @@ import {
   HeaderWrappper,
   FormWrapper,
 } from "./ContactUsStyle";
-
 const ContactUs = () => {
   return (
     <MainWrapper>
@@ -33,57 +32,50 @@ const ContactUs = () => {
         <FormWrapper>
           <Names>
             <Name>
-              <Label for="username">First name</Label>
-
+              <Label for="first_name’">First name</Label>
               <Input
                 type="text"
                 placeholder="Enter your first name"
-                id="username"
+                id="first_name’"
               />
             </Name>
             <Name>
-              <Label for="username">Last name</Label>
-
+              <Label for="last_name">Last name</Label>
               <Input
                 type="text"
                 placeholder="Enter your last name"
-                id="username"
+                id="last_name"
               />
             </Name>
           </Names>
-
           <EmailBox>
-            <Email for="username">Email</Email>
-
+            <Email for="email">Email</Email>
             <EmailInput
               type="text"
               placeholder="yourname@email.com"
-              id="username"
+              id="email"
             />
           </EmailBox>
-
           <div>
-            <MessageLabel for="username">Message</MessageLabel>
-
+            <MessageLabel for="message">Message</MessageLabel>
             <MessageInput
               type="text"
               placeholder="Send me a message and I'll reply you as soon as possible..."
-              id="username"
+              id="message"
             />
           </div>
-
           <CheckBoxWrapper>
             <TickBox type="checkbox" name="cheese" id="cheese"></TickBox>
-
             <TickBoxLabel for="cheese">
               You agree to providing your data to Isaac who may contact you.
             </TickBoxLabel>
           </CheckBoxWrapper>
-          <Button type="button">Send message</Button>
+          <Button type="submit" id="btn__submit">
+            Send message
+          </Button>
         </FormWrapper>
       </Wrapper2>
     </MainWrapper>
   );
 };
-
 export default ContactUs;
