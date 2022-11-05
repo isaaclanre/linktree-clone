@@ -42,7 +42,7 @@ const LinkCard = () => {
     },
     {
       name: "Contact Me",
-      link: "/contact",
+      link: "/#/contact",
       id: "contact",
       data_tip: "Please click here to drop",
     },
@@ -50,7 +50,7 @@ const LinkCard = () => {
   return (
     <HoverEffectStyle>
       {links.map((i) => (
-        <a href={i.link}>
+        <a key={i.id} href={i.link}>
           <LinkCardStyle data-tip={i.data_tip} id={i.id}>
             {i.name}
           </LinkCardStyle>
