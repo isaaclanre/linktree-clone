@@ -7,6 +7,7 @@ import dotIcon from "../assets/dots-horizontal.svg";
 import { ShareButton } from "./ProfileSectionStyle";
 import { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
+import Footer from "./Footer";
 
 function Home() {
   const [isMobile, setIsMobile] = useState(true);
@@ -36,6 +37,7 @@ function Home() {
         <SocialSection />
         <ReactTooltip />
       </MainWrapper>
+      <Footer />
     </>
   );
 }
