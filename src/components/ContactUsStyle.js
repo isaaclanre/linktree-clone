@@ -17,36 +17,16 @@ export const Header = styled.div`
   /* Gray/900 */
 
   color: #101828;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 `;
 
-export const Paragraph = styled.p`
-  width: 720px;
-  height: 30px;
-
+export const Paragraph = styled.div`
   /* Text xl/Normal */
 
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  /* identical to box height, or 150% */
-
-  /* Gray/600 */
-
   color: #475467;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const Label = styled.label`
@@ -64,12 +44,6 @@ export const Label = styled.label`
   /* Gray/700 */
 
   color: #344054;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 `;
 
 export const Input = styled.input`
@@ -103,13 +77,6 @@ export const Input = styled.input`
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const Name = styled.div`
@@ -121,12 +88,6 @@ export const Name = styled.div`
 
   width: 348px;
   height: 70px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
 `;
 
 export const Names = styled.div`
@@ -138,13 +99,6 @@ export const Names = styled.div`
 
   width: 720px;
   height: 70px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const Email = styled.div`
@@ -162,12 +116,6 @@ export const Email = styled.div`
   /* Gray/700 */
 
   color: #344054;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 `;
 
 export const EmailInput = styled.input`
@@ -201,13 +149,6 @@ export const EmailInput = styled.input`
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const EmailBox = styled.div`
@@ -219,13 +160,6 @@ export const EmailBox = styled.div`
 
   width: 720px;
   height: 70px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const MessageLabel = styled.div`
@@ -243,12 +177,6 @@ export const MessageLabel = styled.div`
   /* Gray/700 */
 
   color: #344054;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 `;
 
 export const MessageInput = styled.textarea`
@@ -282,16 +210,9 @@ export const MessageInput = styled.textarea`
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 1;
 `;
 
-export const TickBox = styled.input`
+export const TickBox = styled.input.attrs({ type: "checkbox" })`
   box-sizing: border-box;
 
   width: 20px;
@@ -304,12 +225,6 @@ export const TickBox = styled.input`
 
   border: 1px solid #d0d5dd;
   border-radius: 6px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 `;
 
 export const TickBoxLabel = styled.label`
@@ -328,13 +243,6 @@ export const TickBoxLabel = styled.label`
   /* Gray/600 */
 
   color: #475467;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const CheckBoxWrapper = styled.div`
@@ -346,13 +254,6 @@ export const CheckBoxWrapper = styled.div`
 
   width: 720px;
   height: 24px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 3;
-  align-self: stretch;
-  flex-grow: 0;
 `;
 
 export const Button = styled.button`
@@ -392,11 +293,43 @@ export const Button = styled.button`
 
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 8px;
+`;
 
-  /* Inside auto layout */
+export const Wrapper2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 48px;
 
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+  width: 720px;
+  height: 616px;
+`;
+
+export const HeaderWrappper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 48px;
+
+  width: 720px;
+  height: 616px;
+`;
+
+export const FormWrapper = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+`;
+
+export const MainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0px 96px;
+  gap: 64px;
 `;

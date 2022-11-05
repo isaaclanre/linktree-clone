@@ -1,6 +1,5 @@
 import {
   Button,
-  CheckBox,
   CheckBoxWrapper,
   Email,
   EmailBox,
@@ -8,6 +7,7 @@ import {
   Header,
   Input,
   Label,
+  MainWrapper,
   MessageInput,
   MessageLabel,
   Name,
@@ -15,17 +15,22 @@ import {
   Paragraph,
   TickBox,
   TickBoxLabel,
+  Wrapper2,
+  HeaderWrappper,
+  FormWrapper,
 } from "./ContactUsStyle";
 
 const ContactUs = () => {
   return (
-    <div>
-      <Header> Contact Us</Header>
-      <Paragraph>
-        Hi there, contact me to ask me about anything you have in mind.
-      </Paragraph>
-      <div>
-        <form>
+    <MainWrapper>
+      <Wrapper2>
+        <HeaderWrappper>
+          <Header> Contact Us</Header>
+          <Paragraph>
+            Hi there, contact me to ask me about anything you have in mind.
+          </Paragraph>
+        </HeaderWrappper>
+        <FormWrapper>
           <Names>
             <Name>
               <Label for="username">First name</Label>
@@ -75,9 +80,9 @@ const ContactUs = () => {
             </TickBoxLabel>
           </CheckBoxWrapper>
           <Button type="button">Send message</Button>
-        </form>
-      </div>
-    </div>
+        </FormWrapper>
+      </Wrapper2>
+    </MainWrapper>
   );
 };
 
